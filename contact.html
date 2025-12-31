@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>যোগাযোগ - আমিনুল</title>
+    <style>
+        /* সাধারণ স্টাইল */
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f9; color: #333; margin-bottom: 80px; }
+        
+        /* মেনু স্টাইল */
+        nav { background-color: #333; position: sticky; top: 0; width: 100%; z-index: 1000; }
+        nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav li { position: relative; }
+        nav li a, .dropbtn { display: inline-block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; }
+        nav li a:hover, .dropdown:hover .dropbtn { background-color: #575757; }
+        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); z-index: 1; }
+        .dropdown-content a { color: black; display: block; text-align: left; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        /* কন্টাক্ট পেজ স্টাইল */
+        .container { max-width: 600px; margin: 50px auto; padding: 20px; text-align: center; }
+        .contact-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 { color: #764ba2; margin-bottom: 20px; }
+        p { font-size: 1.1rem; margin: 10px 0; }
+        
+        .contact-btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            background: #25d366; /* WhatsApp Green */
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .email-btn { background: #ea4335; } /* Gmail Red */
+        .fb-btn { background: #1877f2; } /* Facebook Blue */
+
+        .contact-btn:hover { opacity: 0.9; transform: scale(1.05); }
+
+        footer { background-color: #333; color: white; text-align: center; padding: 20px; position: fixed; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newsfeed.html">Newsfeed</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li class="dropdown">
+                <a href="design.html" class="dropbtn">Design &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="design.html#poster">Poster</a>
+                    <a href="design.html#logo">Logo</a>
+                    <a href="design.html#banner">Banner</a>
+                    <a href="design.html#social">Social Media</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="contact-box">
+            <h1>যোগাযোগ করুন</h1>
+            <p>আপনার কোনো প্রজেক্ট বা জিজ্ঞাসা থাকলে নির্দ্বিধায় যোগাযোগ করতে পারেন।</p>
+            <br>
+            
+            <p><strong>📞 মোবাইল:</strong> +৮৮০ ১xxxxxxxxx</p>
+            <p><strong>📍 ঠিকানা:</strong> ঢাকা, বাংলাদেশ</p>
+            
+            <br>
+            <h3>সরাসরি মেসেজ দিন:</h3>
+            <a href="mailto:aminul@example.com" class="contact-btn email-btn">ইমেইল করুন</a>
+            <a href="https://wa.me/8801xxxxxxxxx" class="contact-btn">WhatsApp</a>
+            <a href="https://facebook.com/আপনার_আইডি" class="contact-btn fb-btn">Facebook</a>
+        </div>
+    </div>
+
+    <footer><p>&copy; ২০২৫ আমিনুল ইসলাম</p></footer>
+</body>
+</html>

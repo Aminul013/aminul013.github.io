@@ -3,83 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আমার ব্যক্তিগত ওয়েবসাইট</title>
+    <title>আমিনুল - ব্যক্তিগত ওয়েবসাইট</title>
     <style>
+        /* সাধারণ ডিজাইন */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            padding: 0;
+            background-color: #f0f2f5;
             color: #333;
+            line-height: 1.6;
         }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        
+        /* হেডার বা উপরের অংশ */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
             text-align: center;
-            max-width: 400px;
-            width: 90%;
         }
-        .profile-pic {
-            width: 120px;
-            height: 120px;
-            background-color: #ddd; /* ছবি না থাকলে এই রং দেখাবে */
+
+        /* প্রোফাইল ছবি */
+        .profile-img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            margin: 0 auto 20px;
-            background-image: url('https://via.placeholder.com/150'); /* এখানে তোমার ছবির লিঙ্ক হবে */
-            background-size: cover;
-            background-position: center;
+            border: 5px solid white;
+            object-fit: cover;
+            background-color: #ddd;
         }
+
         h1 {
-            margin: 10px 0;
-            font-size: 24px;
-            color: #2c3e50;
+            margin: 10px 0 5px;
+            font-size: 2.5rem;
         }
-        p {
-            color: #666;
-            font-size: 16px;
-            line-height: 1.5;
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
         }
-        .social-links {
-            margin-top: 25px;
+
+        /* মূল কন্টেন্ট বক্স */
+        .container {
+            max-width: 800px;
+            margin: -30px auto 50px; /* হেডারের একটু উপরে উঠে থাকবে */
+            padding: 20px;
         }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #764ba2;
+            padding-bottom: 10px;
+            color: #4a4a4a;
+        }
+
+        /* বাটন ডিজাইন */
         .btn {
             display: inline-block;
-            text-decoration: none;
-            background: #3498db;
+            background-color: #764ba2;
             color: white;
             padding: 10px 20px;
-            border-radius: 25px;
-            margin: 5px;
-            font-size: 14px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
             transition: 0.3s;
         }
         .btn:hover {
-            background: #2980b9;
+            background-color: #5a3b7e;
+        }
+        
+        /* ফুটার */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* মোবাইলের জন্য */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .container { margin-top: 0; }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="profile-pic"></div>
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Picture" class="profile-img">
         
-        <h1>তোমার নাম এখানে লেখো</h1> 
+        <h1>মোঃ আমিনুল ইসলাম</h1>
         
-        <p>
-            হ্যালো! আমি একজন ছাত্র। আমি প্রযুক্তি এবং নতুন কিছু শিখতে ভালোবাসি। এটি আমার ব্যক্তিগত ওয়েবসাইট।
-        </p>
+        <div class="subtitle">ছাত্র | ওয়েব ডিজাইনার | শিখতে ভালোবাসি</div>
+    </header>
 
-        <div class="social-links">
-            <a href="#" class="btn">Facebook</a>
-            <a href="#" class="btn">LinkedIn</a>
-            <a href="mailto:tomaremail@example.com" class="btn">Email Me</a>
+    <div class="container">
+        
+        <div class="card">
+            <h2>আমার সম্পর্কে</h2>
+            <p>
+                আসসালামু আলাইকুম! আমি একজন ছাত্র। আমি প্রযুক্তি এবং কোডিং শিখতে খুব আগ্রহী। 
+                অবসরে আমি বই পড়তে এবং নতুন নতুন বিষয় নিয়ে ঘাঁটাঘাঁটি করতে পছন্দ করি। 
+                আমার লক্ষ্য হলো একজন দক্ষ ওয়েব ডেভেলপার হওয়া।
+            </p>
         </div>
+
+        <div class="card">
+            <h2>শিক্ষাগত যোগ্যতা</h2>
+            <ul>
+                <li><strong>এইচএসসি (HSC)</strong> - ঢাকা কলেজ (২০২৩)</li>
+                <li><strong>এসএসসি (SSC)</strong> - আইডিয়াল স্কুল (২০২১)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>যোগাযোগ করুন</h2>
+            <p>আমার সাথে যোগাযোগ করতে নিচের বাটনে ক্লিক করুন:</p>
+            <br>
+            <a href="https://facebook.com" class="btn">ফেসবুক</a>
+            <a href="mailto:aminul@example.com" class="btn">ইমেইল</a>
+            <a href="https://github.com/aminul013" class="btn">গিটহাব</a>
+        </div>
+
     </div>
+
+    <footer>
+        <p>&copy; ২০২৫ আমিনুল ইসলাম | সর্বস্বত্ব সংরক্ষিত</p>
+    </footer>
 
 </body>
 </html>

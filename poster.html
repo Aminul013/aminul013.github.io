@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>পোস্টার ডিজাইন</title>
+    <title>পোস্টার ডিজাইন - আমিনুল</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f9; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f9; color: #333; }
         nav { background-color: #333; position: sticky; top: 0; width: 100%; z-index: 1000; }
-        nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; }
-        nav li a, .dropbtn { display: inline-block; color: white; padding: 14px 20px; text-decoration: none; }
-        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); }
+        nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav li { position: relative; }
+        nav li a, .dropbtn { display: inline-block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; }
+        nav li a:hover, .dropdown:hover .dropbtn { background-color: #575757; }
+        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); z-index: 1; }
         .dropdown-content a { color: black; display: block; text-align: left; }
         .dropdown:hover .dropdown-content { display: block; }
-        .container { padding: 50px; text-align: center; }
+        
+        .container { max-width: 1000px; margin: 40px auto; padding: 20px; text-align: center; }
+        .section-title { color: #333; border-bottom: 2px solid #ff6b6b; display: inline-block; padding-bottom: 10px; margin-bottom: 30px; }
+        
+        /* গ্যালারি স্টাইল */
+        .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .gallery img { width: 300px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s; }
+        .gallery img:hover { transform: scale(1.05); }
     </style>
 </head>
 <body>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="newsfeed.html">Newsfeed</a></li>
             <li><a href="projects.html">My Projects</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Design &#9662;</a>
+                <a href="#" class="dropbtn">Design <i class="fa fa-caret-down"></i></a>
                 <div class="dropdown-content">
                     <a href="poster.html">Poster</a>
                     <a href="logo.html">Logo</a>
@@ -35,8 +47,13 @@
     </nav>
 
     <div class="container">
-        <h1>পোস্টার ডিজাইন গ্যালারি</h1>
-        <p>এখানে সব পোস্টার দেখা যাবে।</p>
+        <h1 class="section-title">আমার পোস্টার ডিজাইন কালেকশন</h1>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x450?text=Poster+Design+1" alt="Poster 1">
+            <img src="https://via.placeholder.com/300x450?text=Poster+Design+2" alt="Poster 2">
+            <img src="https://via.placeholder.com/300x450?text=Poster+Design+3" alt="Poster 3">
+        </div>
     </div>
+
 </body>
 </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ডিজাইন - আমিনুল</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f9; color: #333; margin-bottom: 80px; scroll-behavior: smooth; }
+        nav { background-color: #333; position: sticky; top: 0; width: 100%; z-index: 1000; }
+        nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav li { position: relative; }
+        nav li a, .dropbtn { display: inline-block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; }
+        nav li a:hover, .dropdown:hover .dropbtn { background-color: #575757; }
+        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); z-index: 1; }
+        .dropdown-content a { color: black; display: block; text-align: left; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; }
+        .section-title { border-bottom: 2px solid #764ba2; padding-bottom: 10px; margin-top: 50px; color: #764ba2; }
+        .design-box { background: white; padding: 40px; text-align: center; border-radius: 10px; margin-top: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        footer { background-color: #333; color: white; text-align: center; padding: 20px; position: fixed; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newsfeed.html">Newsfeed</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li class="dropdown">
+                <a href="design.html" class="dropbtn">Design &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="design.html#poster">Poster</a>
+                    <a href="design.html#logo">Logo</a>
+                    <a href="design.html#banner">Banner</a>
+                    <a href="design.html#social">Social Media</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 style="text-align: center;">আমার ডিজাইন পোর্টফোলিও</h1>
+
+        <h2 id="poster" class="section-title">Poster Design</h2>
+        <div class="design-box">
+            <p>এখানে পোস্টার ডিজাইন থাকবে।</p>
+            </div>
+
+        <h2 id="logo" class="section-title">Logo Design</h2>
+        <div class="design-box">
+            <p>এখানে লোগো ডিজাইন থাকবে।</p>
+        </div>
+
+        <h2 id="banner" class="section-title">Banner Design</h2>
+        <div class="design-box">
+            <p>এখানে ব্যানার ডিজাইন থাকবে।</p>
+        </div>
+
+        <h2 id="social" class="section-title">Social Media Poster</h2>
+        <div class="design-box">
+            <p>এখানে সোশ্যাল মিডিয়া পোস্টার থাকবে।</p>
+        </div>
+    </div>
+
+    <footer><p>&copy; ২০২৫ আমিনুল ইসলাম</p></footer>
+</body>
+</html>

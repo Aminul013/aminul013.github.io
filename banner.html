@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ব্যানার ডিজাইন - আমিনুল</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f9; color: #333; }
+        nav { background-color: #333; position: sticky; top: 0; width: 100%; z-index: 1000; }
+        nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav li { position: relative; }
+        nav li a, .dropbtn { display: inline-block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; }
+        nav li a:hover, .dropdown:hover .dropbtn { background-color: #575757; }
+        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); z-index: 1; }
+        .dropdown-content a { color: black; display: block; text-align: left; }
+        .dropdown:hover .dropdown-content { display: block; }
+        
+        .container { max-width: 1000px; margin: 40px auto; padding: 20px; text-align: center; }
+        .section-title { color: #333; border-bottom: 2px solid #1dd1a1; display: inline-block; padding-bottom: 10px; margin-bottom: 30px; }
+        
+        .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        /* ব্যানারের জন্য চওড়া সাইজ */
+        .gallery img { width: 450px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s; }
+        .gallery img:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newsfeed.html">Newsfeed</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Design <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="poster.html">Poster</a>
+                    <a href="logo.html">Logo</a>
+                    <a href="banner.html">Banner</a>
+                    <a href="social.html">Social Media</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="section-title">আমার ওয়েব ব্যানার ডিজাইন</h1>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/600x250?text=Banner+Design+1" alt="Banner 1">
+            <img src="https://via.placeholder.com/600x250?text=Banner+Design+2" alt="Banner 2">
+        </div>
+    </div>
+
+</body>
+</html>

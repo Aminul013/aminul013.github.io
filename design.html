@@ -24,18 +24,15 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="newsfeed.html">Newsfeed</a></li>
-            <li><a href="projects.html">My Projects</a></li>
-            <li class="dropdown">
-                <a href="design.html" class="dropbtn">Design &#9662;</a>
-                <div class="dropdown-content">
-                    <a href="design.html#poster">Poster</a>
-                    <a href="design.html#logo">Logo</a>
-                    <a href="design.html#banner">Banner</a>
-                    <a href="design.html#social">Social Media</a>
-                </div>
-            </li>
+          <li class="dropdown">
+    <a href="design.html" class="dropbtn">Design <i class="fa fa-caret-down"></i></a>
+    
+    <div class="dropdown-content">
+        <a href="#logo">Logo</a>
+        <a href="#social-media">Social Media</a>
+        <a href="#banner">Banner</a>
+    </div>
+</li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -49,19 +46,25 @@
             </div>
 
         <h2 id="logo" class="section-title">Logo Design</h2>
-        <div class="design-box">
-            <p>এখানে লোগো ডিজাইন থাকবে।</p>
+    <div class="design-box">
+        <p>এখানে আপনার লোগো ডিজাইনের ছবি থাকবে।</p>
         </div>
 
-        <h2 id="banner" class="section-title">Banner Design</h2>
-        <div class="design-box">
-            <p>এখানে ব্যানার ডিজাইন থাকবে।</p>
-        </div>
+    <h2 id="social-media" class="section-title">Social Media Posts</h2>
+    <div class="design-box">
+        <p>এখানে ফেসবুক বা ইন্সটাগ্রাম পোস্টের ডিজাইন থাকবে।</p>
+    </div>
 
-        <h2 id="social" class="section-title">Social Media Poster</h2>
-        <div class="design-box">
-            <p>এখানে সোশ্যাল মিডিয়া পোস্টার থাকবে।</p>
-        </div>
+    <h2 id="banner" class="section-title">Web Banners</h2>
+    <div class="design-box">
+        <p>এখানে ওয়েবসাইট বা ইউটিউব ব্যানার ডিজাইন থাকবে।</p>
+    </div>
+
+</div> ```
+
+**টিপস:** খেয়াল রাখবেন, `design.html` ফাইলের `<head>` এর ভেতর যেন `index.html` এর মতো একই `<style>` (CSS) কোড থাকে। বিশেষ করে `.dropdown-content` এর CSS টুকু না থাকলে মেনুটি সুন্দরভাবে খুলবে না।
+
+আপনি কোডটি সেভ করে ব্রাউজারে রিলোড দিয়ে দেখুন, সব ঠিকঠাক কাজ করার কথা!
     </div>
 
     <footer><p>&copy; ২০২৫ আমিনুল ইসলাম</p></footer>

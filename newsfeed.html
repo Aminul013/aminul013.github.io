@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsfeed - আমিনুল</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f9; color: #333; margin-bottom: 80px; }
+        nav { background-color: #333; position: sticky; top: 0; width: 100%; z-index: 1000; }
+        nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav li { position: relative; }
+        nav li a, .dropbtn { display: inline-block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; }
+        nav li a:hover, .dropdown:hover .dropbtn { background-color: #575757; }
+        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); z-index: 1; }
+        .dropdown-content a { color: black; display: block; text-align: left; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .container { max-width: 800px; margin: 40px auto; padding: 20px; }
+        .news-card { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        footer { background-color: #333; color: white; text-align: center; padding: 20px; position: fixed; bottom: 0; width: 100%; }
+        h1 { text-align: center; color: #764ba2; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newsfeed.html">Newsfeed</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li class="dropdown">
+                <a href="design.html" class="dropbtn">Design &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="design.html#poster">Poster</a>
+                    <a href="design.html#logo">Logo</a>
+                    <a href="design.html#banner">Banner</a>
+                    <a href="design.html#social">Social Media</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>সর্বশেষ আপডেট (Newsfeed)</h1>
+        
+        <div class="news-card">
+            <h3>🔹 ওয়েবসাইট আপডেট</h3>
+            <p>আজ আমি আমার ওয়েবসাইটটি মাল্টি-পেজ সিস্টেমে রূপান্তর করেছি।</p>
+            <small>তারিখ: ৩১ ডিসেম্বর ২০২৫</small>
+        </div>
+
+        <div class="news-card">
+            <h3>🔹 নতুন ডিজাইন প্রজেক্ট</h3>
+            <p>খুব শীঘ্রই নতুন কিছু গ্রাফিক ডিজাইনের কাজ আপলোড করব।</p>
+            <small>তারিখ: ৩০ ডিসেম্বর ২০২৫</small>
+        </div>
+    </div>
+
+    <footer><p>&copy; ২০২৫ আমিনুল ইসলাম</p></footer>
+</body>
+</html>

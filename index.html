@@ -3,223 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আমিনুল - ব্যক্তিগত ওয়েবসাইট</title>
+    <title>হোম - আমিনুল</title>
     <style>
-        /* সাধারণ ডিজাইন */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            scroll-behavior: smooth; /* মেনুতে ক্লিক করলে স্মুথভাবে নিচে নামবে */
-        }
-
-        /* নেভিগেশন বার (মেনু) */
-        nav {
-            background-color: #333;
-            position: sticky; /* মেনু সবসময় উপরে থাকবে */
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav li {
-            float: left;
-        }
-
-        nav li a, .dropbtn {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        nav li a:hover, .dropdown:hover .dropbtn {
-            background-color: #575757;
-        }
-
-        /* ড্রপডাউন মেনু ডিজাইন (Design এর জন্য) */
-        li.dropdown {
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {background-color: #f1f1f1;}
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* হেডার ডিজাইন */
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid white;
-            object-fit: cover;
-            /* আপনার আপলোড করা ছবি থাকলে নিচের লাইনটি ব্যবহার করবেন */
-            /* src="profile.jpg" */
-        }
-
-        /* সেকশন ডিজাইন */
-        section {
-            padding: 60px 20px;
-            max-width: 900px;
-            margin: auto;
-            border-bottom: 1px solid #ddd;
-        }
-
-        h2 {
-            color: #764ba2;
-            border-left: 5px solid #764ba2;
-            padding-left: 10px;
-        }
-
-        .project-card, .design-item {
-            background: white;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        /* ফুটার */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        
-        /* মোবাইলের জন্য রেসপনসিভ */
-        @media screen and (max-width: 600px) {
-            nav ul { flex-direction: column; }
-            nav li { width: 100%; text-align: center; }
-            nav li a { width: 100%; box-sizing: border-box; }
-            .dropdown-content { position: relative; }
-        }
+        /* এই CSS স্টাইলটি সব পেজে একই থাকবে */
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f9; color: #333; }
+        nav { background-color: #333; position: sticky; top: 0; width: 100%; z-index: 1000; }
+        nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav li { position: relative; }
+        nav li a, .dropbtn { display: inline-block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; }
+        nav li a:hover, .dropdown:hover .dropbtn { background-color: #575757; }
+        .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); z-index: 1; }
+        .dropdown-content a { color: black; display: block; text-align: left; }
+        .dropdown:hover .dropdown-content { display: block; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 100px 20px; text-align: center; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; object-fit: cover; }
+        .container { max-width: 800px; margin: 40px auto; padding: 20px; text-align: center; }
+        footer { background-color: #333; color: white; text-align: center; padding: 20px; position: fixed; bottom: 0; width: 100%; }
+        /* কন্টেন্ট বেশি হলে ফুটার যেন লেখার উপরে না আসে সেজন্য নিচের মার্জিন */
+        body { margin-bottom: 80px; }
     </style>
 </head>
 <body>
 
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#newsfeed">Newsfeed</a></li>
-            <li><a href="#projects">My Projects</a></li>
-            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newsfeed.html">Newsfeed</a></li>
+            <li><a href="projects.html">My Projects</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Design &#9662;</a>
+                <a href="design.html" class="dropbtn">Design &#9662;</a>
                 <div class="dropdown-content">
-                    <a href="#poster">Poster</a>
-                    <a href="#logo">Logo</a>
-                    <a href="#banner">Banner</a>
-                    <a href="#social-media">Social Media Poster</a>
+                    <a href="design.html#poster">Poster</a>
+                    <a href="design.html#logo">Logo</a>
+                    <a href="design.html#banner">Banner</a>
+                    <a href="design.html#social">Social Media</a>
                 </div>
             </li>
-            
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <header id="home">
+    <header>
         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile" class="profile-img">
-        <h1>মোঃ আমিনুল ইসলাম</h1>
-        <p>ছাত্র | ওয়েব ডিজাইনার | গ্রাফিক ডিজাইনার</p>
+        <h1>স্বাগতম, আমি আমিনুল ইসলাম</h1>
+        <p>এটা আমার ব্যক্তিগত ওয়েবসাইটের হোম পেজ।</p>
     </header>
 
-    <section id="newsfeed">
-        <h2>Newsfeed</h2>
-        <div class="project-card">
-            <h3>সাম্প্রতিক আপডেট</h3>
-            <p>আজ আমি আমার নতুন ওয়েবসাইটটি লঞ্চ করেছি। এখানে আমার সব কাজ দেখতে পাবেন।</p>
-            <small>তারিখ: ৩১ ডিসেম্বর ২০২৫</small>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <h3>প্রজেক্ট ১: পার্সোনাল পোর্টফোলিও</h3>
-            <p>এইচটিএমএল এবং সিএসএস দিয়ে তৈরি আমার নিজের ওয়েবসাইট।</p>
-        </div>
-        <div class="project-card">
-            <h3>প্রজেক্ট ২: কামিং সুন...</h3>
-            <p>নতুন একটি প্রজেক্ট নিয়ে কাজ করছি। শীঘ্রই বিস্তারিত আসছে।</p>
-        </div>
-    </section>
-
-    <section id="design">
-        <h2>Design Portfolio</h2>
-        
-        <div id="poster" class="design-item">
-            <h3>Poster Design</h3>
-            <p>এখানে আমার করা পোস্টার ডিজাইনগুলো থাকবে।</p>
-            </div>
-
-        <div id="logo" class="design-item">
-            <h3>Logo Design</h3>
-            <p>আমার তৈরি করা কিছু লোগো স্যাম্পল।</p>
-        </div>
-
-        <div id="banner" class="design-item">
-            <h3>Banner Design</h3>
-            <p>ইউটিউব এবং ফেসবুকের জন্য তৈরি ব্যানার।</p>
-        </div>
-
-        <div id="social-media" class="design-item">
-            <h3>Social Media Poster</h3>
-            <p>সোশ্যাল মিডিয়া মার্কেটিং এর জন্য তৈরি ডিজাইন।</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>যেকোনো প্রয়োজনে যোগাযোগ করতে পারেন:</p>
-        <p>📧 ইমেইল: aminul@example.com</p>
-        <p>📱 ফোন: +৮৮০ ১xxxxxxxxx</p>
-    </section>
+    <div class="container">
+        <h2>আমার সম্পর্কে</h2>
+        <p>আমি একজন ছাত্র এবং আমি ওয়েব ডিজাইন শিখছি। বিস্তারিত জানতে মেনু থেকে অন্যান্য পেজগুলো ভিজিট করুন।</p>
+    </div>
 
     <footer>
-        <p>&copy; ২০২৫ আমিনুল ইসলাম | সর্বস্বত্ব সংরক্ষিত</p>
+        <p>&copy; ২০২৫ আমিনুল ইসলাম</p>
     </footer>
 
 </body>
